@@ -17,7 +17,7 @@ dns:
 proxies:
   - name: Kor
     type: vmess
-    server: 146.56.143.64
+    server: mrmanh85.ga
     port: 10086
     uuid: 0a8d1f35-d1dc-4d1d-ad47-54216348f209
     alterId: 0
