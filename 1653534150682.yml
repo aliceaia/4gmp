@@ -5,14 +5,7 @@ mode: rule
 log-level: info
 external-controller: '127.0.0.1:9090'
 proxies:
-  - name: Kor
-    type: vmess
-    server: mrmanh85.ga
-    port: 80
-    uuid: a7491a7e-b40c-4a59-906f-ca2146ee4850
-    alterId: 0
-    cipher: auto
-    udp: true
+  - {name: Kor_PC, server: mrmanh85.ga, port: 80, type: vmess, uuid: a7491a7e-b40c-4a59-906f-ca2146ee4850, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: mrm, headers: {Host: mrmanh85.ga}}}
 proxy-groups:
   - name: Proxy
     type: select
