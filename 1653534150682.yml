@@ -12,10 +12,12 @@ proxies:
     uuid: a7491a7e-b40c-4a59-906f-ca2146ee4850
     alterId: 0
     cipher: auto
+    udp: true
 proxy-groups:
   - name: Proxy
     type: select
     proxies:
       - Kor
 rules:
+  -'DOMAIN,youtube.com,DIRECT'
   - "MATCH,DIRECT"
