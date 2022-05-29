@@ -19,5 +19,5 @@ proxy-groups:
     proxies:
       - Kor
 rules:
-  -'DOMAIN,youtube.com,DIRECT'
+  - 'DOMAIN,youtube.com,DIRECT'
   - "MATCH,DIRECT"
