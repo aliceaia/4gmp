@@ -12,5 +12,5 @@ proxy-groups:
     proxies:
       - Kor_PC
 rules:
-  - 'DOMAIN,youtube.com,DIRECT'
-  - "MATCH,DIRECT"
+    - 'DOMAIN-SUFFIX,github.com,DIRECT'
+    - 'MATCH,Proxy'
