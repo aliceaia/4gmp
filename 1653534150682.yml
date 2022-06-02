@@ -12,5 +12,5 @@ proxy-groups:
     proxies:
       - Kor_PC
 rules:
-    - 'DOMAIN-SUFFIX,github.com,DIRECT'
+    - 'DOMAIN-SUFFIX,github,DIRECT'
     - 'MATCH,Proxy'
