@@ -11,5 +11,3 @@ proxy-groups:
     type: select
     proxies:
       - Kor
-rules:
-  - "MATCH,DIRECT"
