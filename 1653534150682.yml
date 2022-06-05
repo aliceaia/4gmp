@@ -10,7 +10,7 @@ proxy-groups:
   - name: Proxy
     type: select
     proxies:
-      - Kor_PC
+      - Kor
 rules:
     - 'DOMAIN-SUFFIX,gocmod,DIRECT'
     - 'MATCH,Proxy'
