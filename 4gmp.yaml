@@ -4,6 +4,16 @@ bind-address: '*'
 mode: rule
 log-level: info
 external-controller: '127.0.0.1:9090'
+dns:
+    enable: true
+    ipv6: false
+    default-nameserver: [223.5.5.5, 119.29.29.29]
+    enhanced-mode: redir-host
+    fake-ip-range: 198.18.0.1/16
+    use-hosts: true
+    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
+    fallback: ['tls://1.0.0.1:853', 'https://cloudflare-dns.com/dns-query', 'https://dns.google/dns-query']
+    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
 - {name: Kor, server: 4gmp.ml, port: 80, type: vmess, uuid: e914dcbd-dde3-4eed-e0fd-a1d568abb624, alterId: 0, cipher: auto, tls: false, udp: true, network: ws, ws-opts: {path: /4gmp, headers: {Host: gocmod.akamaized.net}}
 proxy-groups:
