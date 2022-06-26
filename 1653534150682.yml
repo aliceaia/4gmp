@@ -4,8 +4,18 @@ bind-address: '*'
 mode: global
 log-level: info
 external-controller: '127.0.0.1:9090'
+dns:
+    enable: true
+    ipv6: false
+    default-nameserver: [223.5.5.5, 119.29.29.29]
+    enhanced-mode: redir-host
+    fake-ip-range: 198.18.0.1/16
+    use-hosts: true
+    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
+    fallback: ['tls://1.0.0.1:853', 'https://cloudflare-dns.com/dns-query', 'https://dns.google/dns-query']
+    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-  - {name: Kor, server: mrmanh85.ga, port: 10086, type: vmess, uuid: 8315184a-5f2d-436d-f142-c64b92d50e6f, alterId: 0, cipher: auto, tls: false, udp: true, network: ws, ws-opts: {path: /mrm, headers: {Host: mrmanh85.ga}}}
+  - {name: Kor, server: 152.70.39.206, port: 10086, type: vmess, uuid: 8315184a-5f2d-436d-f142-c64b92d50e6f, alterId: 0, cipher: auto, tls: false, udp: true, network: ws, ws-opts: {path: /mrm, headers: {Host: mrmanh85.ga}}}
 proxy-groups:
   - name: Proxy
     type: select
