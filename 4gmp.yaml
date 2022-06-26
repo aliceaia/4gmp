@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 external-controller: '127.0.0.1:9090'
 proxies:
-- {name: Kor, server: 4gmp.ml, port: 80, type: vmess, uuid: e914dcbd-dde3-4eed-e0fd-a1d568abb624, alterId: 0, cipher: auto, tls: false, udp: true, network: ws, ws-opts: {path: /4gmp, headers: {Host: gocmod.akamaized.net}}}
+- {name: Kor, server: 4gmp.ml, port: 80, type: vmess, uuid: e914dcbd-dde3-4eed-e0fd-a1d568abb624, alterId: 0, cipher: auto, tls: false, udp: true, network: ws, ws-opts: {path: /4gmp, headers: {Host: videoakm1.tv360.vn}}}
 proxy-groups:
   - name: Proxy
     type: select
