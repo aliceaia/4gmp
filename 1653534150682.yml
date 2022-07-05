@@ -15,7 +15,7 @@ external-controller: '127.0.0.1:9090'
 #     fallback: ['tls://1.0.0.1:853', 'https://cloudflare-dns.com/dns-query', 'https://dns.google/dns-query']
 #     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-   - {name: Kor, server: mrmanh85.ga, port: 10086, type: vmess, uuid: 8315184a-5f2d-436d-f142-c64b92d50e6f, alterId: 0, cipher: auto, tls: false, udp: true, network: ws, ws-opts: {path: /mrm}}
+  - {name: Kor, server: 129.154.221.50, port: 10086, type: vmess, uuid: 573d429d-498e-405f-84c5-890cf458893d, alterId: 0, cipher: auto, tls: false, udp: true}
 
 proxy-groups:
   - name: Proxy
