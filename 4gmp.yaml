@@ -15,8 +15,8 @@ dns:
     fallback: ['tls://1.0.0.1:853', 'https://cloudflare-dns.com/dns-query', 'https://dns.google/dns-query']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-- {name: Kor, server: 132.226.225.160, port: 80, type: vmess, uuid: e914dcbd-dde3-4eed-e0fd-a1d568abb624, alterId: 0, cipher: auto, tls: false, udp: true, network: ws, ws-opts: {path: /4gmp, headers: {Host: gocmod.akamaized.net} }, ws-path: /4gmp, ws-headers: { Host: gocmod.akamaized.net } }
-# - {name: Kor, server: 132.226.225.160, port: 80, type: vmess, uuid: e914dcbd-dde3-4eed-e0fd-a1d568abb624, alterId: 0, cipher: auto, tls: false, udp: true, network: ws, ws-opts: {path: /4gmp, headers: {Host: m.tiktok.com} }, ws-path: /4gmp, ws-headers: { Host: m.tiktok.com } }
+# - {name: Kor, server: 132.226.225.160, port: 80, type: vmess, uuid: e914dcbd-dde3-4eed-e0fd-a1d568abb624, alterId: 0, cipher: auto, tls: false, udp: true, network: ws, ws-opts: {path: /4gmp, headers: {Host: gocmod.akamaized.net} }, ws-path: /4gmp, ws-headers: { Host: gocmod.akamaized.net } }
+- {name: Kor, server: 132.226.225.160, port: 80, type: vmess, uuid: e914dcbd-dde3-4eed-e0fd-a1d568abb624, alterId: 0, cipher: auto, tls: false, udp: true, network: ws, ws-opts: {path: /4gmp, headers: {Host: m.tiktok.com} }, ws-path: /4gmp, ws-headers: { Host: m.tiktok.com } }
 # - {name: Kor, server: 132.226.225.160, port: 80, type: vmess, uuid: e914dcbd-dde3-4eed-e0fd-a1d568abb624, alterId: 0, cipher: auto, tls: false, udp: true, network: ws, ws-opts: {path: /4gmp, headers: {Host: lifebox.vn} }, ws-path: /4gmp, ws-headers: { Host: lifebox.vn } }
 
 
