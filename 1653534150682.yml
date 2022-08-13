@@ -5,7 +5,7 @@ mode: global
 log-level: info
 external-controller: '127.0.0.1:9090'
 proxies:
-  - {name: Kor, server: mrmanh85.ga, port: 10086, type: vmess, uuid: 573d429d-498e-405f-84c5-890cf458893d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: Kor, server: 146.56.155.182, port: 35648, type: ss, password: h1RwGcYH7V, alterId: 0, cipher: chacha20-ietf-poly1305, tls: false, udp: true}
 
 proxy-groups:
   - name: Proxy
