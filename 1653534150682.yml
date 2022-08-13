@@ -5,7 +5,7 @@ mode: global
 log-level: info
 external-controller: '127.0.0.1:9090'
 proxies:
-  - {name: Kor, server: 146.56.155.182, port: 35648, type: ss, password: h1RwGcYH7V, cipher: chacha20-ietf-poly1305, udp: true}
+  - {name: Kor, server: 146.56.155.182, port: 35648, type: ss, password: h1RwGcYH7V, cipher: chacha20-ietf-poly1305, udp: true, plugin: v2ray-plugin, plugin-opts: {mode: websocket, path: /mrm}}
 
 proxy-groups:
   - name: Proxy
