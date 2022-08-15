@@ -10,7 +10,7 @@ proxy-groups:
   - name: Proxy
     type: select
     proxies:
-      - Kor
+      - Korean
 rules:
     - 'DOMAIN-SUFFIX,gocmod,DIRECT'
     - 'MATCH,Proxy'
