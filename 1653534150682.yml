@@ -1,22 +1,11 @@
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
-mode: global
+mode: rule
 log-level: info
 external-controller: '127.0.0.1:9090'
 proxies:
-  - name: Kor
-    server: 146.56.155.182
-    port: 35648
-    type: ss
-    password: h1RwGcYH7V
-    cipher: chacha20-ietf-poly1305
-    udp: true
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      path: /mrm
-
+  - {name: Korean, server: 146.56.155.182, port: 21848, type: vmess, uuid: 071111a8-2fb4-4e16-8fc4-04cfe995d6f1, alterId: 0, cipher: auto, tls: false, udp: true, network: ws, ws-opts: {path: /arch}}
 proxy-groups:
   - name: Proxy
     type: select
