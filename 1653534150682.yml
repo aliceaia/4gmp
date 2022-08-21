@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 external-controller: '127.0.0.1:9090'
 proxies:
-  - {name: Korean, server: 146.56.155.182, port: 21848, type: vmess, uuid: 071111a8-2fb4-4e16-8fc4-04cfe995d6f1, alterId: 0, cipher: auto, tls: false, udp: true, network: ws, ws-opts: {path: /arch}}
+  - {name: Korean, server: 146.56.155.182, port: 21848, type: vmess, uuid: a5045f10-7e62-4155-9ddb-928e620d3ab8, alterId: 0, cipher: auto, tls: false, udp: true, network: ws, ws-opts: {path: /arch}}
 proxy-groups:
   - name: Proxy
     type: select
