@@ -25,6 +25,7 @@ proxy-groups:
     type: select
     proxies:
       - Kor
+      - VN
 rules:
     - 'DOMAIN-SUFFIX,github.com,DIRECT'
     - 'MATCH,Proxy'
