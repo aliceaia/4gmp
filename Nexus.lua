@@ -359,25 +359,8 @@ do -- Default Commands
             _TARGETFPS = tonumber(Message)
         end
 
-        local OldLevel = settings().Rendering.QualityLevel
-
         RunService:Set3dRenderingEnabled(false)
         settings().Rendering.QualityLevel = 1
-
-        InputService.WindowFocused:Connect(function()
-            RunService:Set3dRenderingEnabled(true)
-            settings().Rendering.QualityLevel = OldLevel
-            setfpscap(30)
-        end)
-
-        InputService.WindowFocusReleased:Connect(function()
-            OldLevel = settings().Rendering.QualityLevel
-
-            RunService:Set3dRenderingEnabled(false)
-            settings().Rendering.QualityLevel = 1
-            setfpscap(_TARGETFPS)
-        end)
-
         setfpscap(_TARGETFPS)
     end)
 end
