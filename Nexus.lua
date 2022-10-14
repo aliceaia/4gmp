@@ -361,7 +361,7 @@ do -- Default Commands
 
         RunService:Set3dRenderingEnabled(false)
         settings().Rendering.QualityLevel = 1
-        setfpscap(_TARGETFPS)
+        --setfpscap(_TARGETFPS)
     end)
 end
 
