@@ -358,7 +358,7 @@ do -- Default Commands
         if Message and tonumber(Message) then
             _TARGETFPS = tonumber(Message)
         end
-
+        UGS.MasterVolume = 0
         RunService:Set3dRenderingEnabled(false)
         settings().Rendering.QualityLevel = 1
         --setfpscap(_TARGETFPS)
