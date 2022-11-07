@@ -352,13 +352,6 @@ do -- Default Commands
     Nexus:AddCommand('performance', function(Message)
         if _PERF then return end
                                             
-        if (UGS.MasterVolume - OldVolume) > 0.01 then
-            OldVolume = UGS.MasterVolume
-        end
-
-        UGS.MasterVolume = 0
-    end)
-       
         _PERF = true
         _TARGETFPS = 15
 
