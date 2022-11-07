@@ -353,15 +353,32 @@ do -- Default Commands
         if _PERF then return end
         
         _PERF = true
-        _TARGETFPS = 6
+        _TARGETFPS = 15
 
         if Message and tonumber(Message) then
             _TARGETFPS = tonumber(Message)
         end
-        UGS.MasterVolume = 0
+
+        local OldLevel = settings().Rendering.QualityLevel
+
         RunService:Set3dRenderingEnabled(false)
         settings().Rendering.QualityLevel = 1
-        --setfpscap(_TARGETFPS)
+
+        InputService.WindowFocused:Connect(function()
+            RunService:Set3dRenderingEnabled(false)
+            settings().Rendering.QualityLevel = 1
+            setfpscap(_TARGETFPS)
+        end)
+
+        InputService.WindowFocusReleased:Connect(function()
+            OldLevel = settings().Rendering.QualityLevel
+
+            RunService:Set3dRenderingEnabled(false)
+            settings().Rendering.QualityLevel = 1
+            setfpscap(_TARGETFPS)
+        end)
+
+        setfpscap(_TARGETFPS)
     end)
 end
 
