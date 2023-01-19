@@ -363,8 +363,9 @@ do -- Default Commands
 
         RunService:Set3dRenderingEnabled(false)
         settings().Rendering.QualityLevel = 1
-
+        game:GetService("ReplicatedFirst"):RemoveDefaultLoadingScreen()
         InputService.WindowFocused:Connect(function()
+            game:GetService("ReplicatedFirst"):RemoveDefaultLoadingScreen()                                        
             RunService:Set3dRenderingEnabled(false)
             settings().Rendering.QualityLevel = 1
             setfpscap(_TARGETFPS)
@@ -372,7 +373,7 @@ do -- Default Commands
 
         InputService.WindowFocusReleased:Connect(function()
             OldLevel = settings().Rendering.QualityLevel
-
+            game:GetService("ReplicatedFirst"):RemoveDefaultLoadingScreen()
             RunService:Set3dRenderingEnabled(false)
             settings().Rendering.QualityLevel = 1
             setfpscap(_TARGETFPS)
