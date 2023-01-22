@@ -16,7 +16,7 @@ dns:
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
 - {name: VN, server: 4gmp.hopto.org, port: 80, type: vmess, uuid: 7f0e446e-d627-32aa-a230-dfd387dca6e6, alterId: 0, cipher: auto, tls: false, udp: true, network: ws, ws-opts: {path: /4gmp, headers: {Host: m.tiktok.com} }, ws-path: /4gmp, ws-headers: { Host: m.tiktok.com } }
-- {name: Kor, server: 140.238.1.117, port: 80, type: vmess, uuid: c4a6952e-138a-3fe9-803b-8f2d2dd0254b, alterId: 0, cipher: auto, tls: false, udp: true, network: ws, ws-opts: {path: /4gmp, headers: {Host: m.tiktok.com} }, ws-path: /4gmp, ws-headers: { Host: m.tiktok.com } }
+- {name: Kor, server: 140.238.1.117, port: 80, type: vmess, uuid: c4a6952e-138a-3fe9-803b-8f2d2dd0254b, alterId: 0, cipher: auto, tls: false, udp: true, network: ws, ws-opts: {path: /4gmp, headers: {Host: dl.kgvn.garenanow.com} }, ws-path: /4gmp, ws-headers: { Host: dl.kgvn.garenanow.com } }
 # - {name: Kor, server: 132.226.225.160, port: 80, type: vmess, uuid: e914dcbd-dde3-4eed-e0fd-a1d568abb624, alterId: 0, cipher: auto, tls: false, udp: true, network: ws, ws-opts: {path: /4gmp, headers: {Host: lifebox.vn} }, ws-path: /4gmp, ws-headers: { Host: lifebox.vn } }
 
 
