@@ -33,7 +33,7 @@ _G.Settings = {
                 "Blueberry",
                 "Orange Tulip",
                 "Rose",
-                "Stonebite",
+                "Stonebite"
             }
         }
     },
