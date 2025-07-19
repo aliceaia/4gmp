@@ -6,9 +6,9 @@ _G.Settings = {
         Plant = {
             ["Bamboo"] = 10,
             ["Mushroom"] = 5,
-			["Coconut"] = 5,			
-			["Cactus"] = 5,
-			["Dragon Fruit"] = 5,
+            ["Coconut"] = 5,			
+            ["Cactus"] = 5,
+            ["Dragon Fruit"] = 5,
             ["Cauliflower"] = 5,
             ["Watermelon"] = 5,
             ["Rafflesia"] = 5,
@@ -22,12 +22,12 @@ _G.Settings = {
             ["Loquat"] = 5,
             ["Feijoa"] = 5,
             ["Sugar Apple"] = 5
-	},
+        },
         Destroy = {
             WhenMoney = 50000,
             Plant = {
                 "Strawberry",
-				"Carrot",
+                "Carrot",
                 "Strawberry",
                 "Carrot",
                 "Blueberry",
@@ -58,8 +58,6 @@ _G.Settings = {
             "Fake Egg",
             "Rare Summer Egg",
             "Oasis Egg",
-            "Common Summer Egg",
-            "Common Egg",
             "Anti Bee Egg"
         },
     },
@@ -84,20 +82,23 @@ _G.Settings = {
     CraftSettings = {
         Enabled = true,
         Workbench = "Anti Bee Egg",
-        SeedEventWorkbench = "",
-        DinoEventWorkbench = ""
+        SeedEventWorkbench = ""
     },
-    PrehistoricEvents = {
-        ClaimReward = true,
-        PetToTrade = {
-            "Dog"
-        },
-        DinoSourUpgrade = {
-            ['Enabled'] = true
+    ZenEvents = {
+        TakeAllTranquilPlants = true,
+        TradeChi = {
+            Enabled = true,
+            MaxChi =  20
         }
     },
-    GearStocksBuy = {
-        ""
+    StockBuy = {
+        GearStocksBuy = {""},
+        ZenItems = {""}
+    },
+    SprinklerSettings = {
+        PlaceManage = {
+            ["Basic Sprinkler"] = 1
+        }
     },
     UseSeedPack = true,
     CropSettings = {
