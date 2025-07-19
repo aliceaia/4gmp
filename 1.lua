@@ -6,9 +6,9 @@ _G.Settings = {
         Plant = {
             ["Bamboo"] = 1,
             ["Mushroom"] = 1,
-	    ["Coconut"] = 1,			
-	    ["Cactus"] = 1,
-	    ["Dragon Fruit"] = 1,
+			["Coconut"] = 1,			
+			["Cactus"] = 1,
+			["Dragon Fruit"] = 1,
             ["Cauliflower"] = 1,
             ["Watermelon"] = 1,
             ["Rafflesia"] = 1,
@@ -27,7 +27,7 @@ _G.Settings = {
             WhenMoney = 50000,
             Plant = {
                 "Strawberry",
-		"Carrot"
+				"Carrot"
                 "Strawberry",
                 "Carrot",
                 "Blueberry",
